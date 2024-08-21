@@ -25,5 +25,25 @@ class Program
         frutas.ForEach(Console.WriteLine);
 
         frutas.Clear();
+
+        //Trabalhando com dicionario (dictionary)
+        /* Criando um Dicionario de dados */
+        Dictionary<int, string> carros = new Dictionary<int, string>();
+
+        carros.Add(5, "Corsa");
+        carros.Add(10, "Masserati");
+        carros.Add(2, "porshe");
+
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+
+        Console.WriteLine("Minha dicionario de carros");
+
+        foreach (var carro in carros)
+        {
+            Console.WriteLine($"{carro.Key} - {carro.Value}");
+        }
+
     }
 }
